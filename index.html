@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- what is the exact function of the viewport tag -->
+    <title>Information Management Group</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@typopro/web-bebas-neue@3.7.5/TypoPRO-BebasNeue.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Playfair+Display:700);
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  
+<body>
+  <div class="whole">
+    <nav class="navbar">
+      <ul>
+        <li class ="navbar-logo image" style="padding-left: 0;"><a href="index.html"><img title="IMG Logo"src="images/imglogo1.png" alt="img-logo" width="50px" height="auto"></a></li>
+        <li class="navbar-toggle ham"><a href="index.html"><i class="fa fa-bars"></i></a></li>
+        <li class="navbar-links blogg"><a href="blog.html">BLOG</a></li>
+        <li class="navbar-links"><a href="#">PROJECTS</a></li>
+        <li class="navbar-links"><a href="#">TEAM</a></li>
+        <li class="navbar-links alum" style="padding-right: 0px;"><a href="#">ALUMNI</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+  <div class="container">
+
+    <div class="one">
+      <div class="image1">
+
+      </div>
+      <div class="para1">
+        <header>
+          The fourth ingredient of Channeli
+        </header>
+      </div>
+      <div class="p1">
+        <div class="p1-1">
+          Aman Sharma
+        </div>
+        <div class="p2-1">
+          Jan 12th, '21
+        </div>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="image2">
+
+      </div>
+      <div class="para2">
+        <header>
+          IMG x Design
+        </header>
+      </div>
+      <div class="p2">
+        <div class="p1-2">
+          Yavnika Garg
+        </div>
+        <div class="p2-2">
+          Dec 23rd, '20
+        </div>
+      </div>
+    </div>
+    <div class="three">
+      <div class="image3">
+
+      </div>
+      <div class="para3">
+        <header>
+          My git-icious journey at IMG
+        </header>
+      </div>
+      <div class="p3">
+        <div class="p1-3">
+          Sparsh Agrawal
+        </div>
+        <div class="p2-3">
+          Dec 19th, '20
+        </div>
+      </div>
+    </div>
+    <div class="four">
+      <div class="image4">
+
+      </div>
+      <div class="para4">
+        <header>
+          Content Management System @iitr.ac.in
+        </header>
+      </div>
+      <div class="p4">
+        <div class="p1-4">
+          Pranjal Tale
+        </div>
+        <div class="p2-4">
+          Jan 23rd, '20
+        </div>
+      </div>
+    </div>
+    <div class="five">
+      <div class="image5">
+
+      </div>
+      <div class="para5">
+        <header>
+          Experience at IMG, IIT Roorkee
+        </header>
+      </div>
+      <div class="p5">
+        <div class="p1-5">
+          Rishi Ranjan
+        </div>
+        <div class="p2-5">
+          Dec 30th, '19
+        </div>
+      </div>
+    </div>
+    <div class="six">
+      <div class="image6">
+
+      </div>
+      <div class="para6">
+        <header>
+          Designing a College Campus based Buy and Sell App
+        </header>
+      </div>
+      <div class="p6">
+        <div class="p1-6">
+          Manya Singh
+        </div>
+        <div class="p2-6">
+          Dec 22nd, '19
+        </div>
+      </div>
+    </div>
+
+  
+  </div>
+  <div class="M">
+    <a href="#"><img src="images/M.png" alt="M" width="25px" height="25px"></a>
+  </div>
+  <footer id="foot"><div>&copy 2021 Information Management Group</div></footer>
+  <script>
+  
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 1) {
+          $(".navbar").css("background" , "white");
+          $(".navbar").addClass("active");
+          document.getElementsByClassName("js")[0].src = "images/imglogo1.png";
+          document.getElementsByClassName("fa-bars")[0].style.color = "black";
+        }
+        if(scroll<=1){
+          $(".navbar").css("background" , "none");
+          $(".navbar").removeClass("active");
+          document.getElementsByClassName("js")[0].src = "images/imglogo.png";
+          document.getElementsByClassName("fa-bars")[0].style.color = "#f8d16c";
+        }
+      })
+    })
+    </script>
+</body>
+</html>
